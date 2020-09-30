@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>org.affected_code</id>
+    <name>Find affected code</name>
+    <version>1.0.0</version>
+    <vendor email="daniil.timashov@yandex.ru" url="https://github.com/dantimashov">Daniil Timashov</vendor>
+
+    <description>Plugin to find affected tests before push action</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Find affected tests" anchor="right" factoryClass="org.affectedcode.ui.AffectedCodeWindowFactory"/>
+    </extensions>
+</idea-plugin>

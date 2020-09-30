@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.21'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+runIde {
+    jbrVersion = '11_0_2b159'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    version '2019.1'
+    intellij.updateSinceUntilBuild false
+    plugins = ['git4idea']
+}
+patchPluginXml {
+    version project.version
+    changeNotes """
+      <b>Version 1.0.0:</b><br>
+      Simplified plugin version for open source.<br>
+      """
+}
