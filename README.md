@@ -5,6 +5,9 @@ It's planned to develop and test new features out of the original goals.
 
 Current version of the plugin uses the Git as VCS system. If you use plugin for a project then the root folder of the project should be under the version control of Git.
 
+## Description
+[An article about plugin creation (in Russian but with images in English)](https://habr.com/en/company/wrike/blog/532704/)
+
 ## For contributors
 
 There are variables **ID_ANNOTATION** and **ID_VALUE** in class *CurrentProject*. Current values are linked with special [project](https://github.com/dantimashov/DummyAutotestProject) for testing. If you plan to use plugin differently then change this part of the code first.
